@@ -17,6 +17,7 @@
   --accent-soft: rgba(139, 49, 57, 0.1);
   --shadow-soft: 0 12px 36px rgba(41, 23, 11, 0.08);
 }
+
 .img-box{
   position: relative;
   width: 100%;
@@ -25,7 +26,6 @@
   border-radius: 15px;
   margin-bottom: 20px;
 }
-
 .img-box img{
   width: 100%;
   height: 100%;
@@ -37,20 +37,77 @@
 
   transition: 0.5s ease;
 }
-
 /* ảnh 2 ẩn ban đầu */
 .img2{
   opacity: 0;
 }
-
 /* hover đổi ảnh */
 .img-box:hover .img1{
   opacity: 0;
 }
-
 .img-box:hover .img2{
   opacity: 1;
 }
+
+/* LIST */
+.qa-list{
+  list-style: none;
+  padding-left: 0;
+  counter-reset: item;
+}
+/* CARD (giữ ở li) */
+.qa-list li{
+  counter-increment: item;
+  position: relative;
+
+  background: rgba(255,255,255,0.7);
+  padding: 30px;
+  border-radius: 25px;
+  margin-bottom: 60px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+/* số 01 */
+.qa-list li::before{
+  content: "0" counter(item);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-weight: bold;
+  color: #8b3a3a;
+}
+/* DETAILS */
+.qa{
+  position: relative;
+}
+/* SUMMARY */
+.qa summary{
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+.qa summary::-webkit-details-marker{
+  display: none;
+}
+/* MŨI TÊN ▶ */
+.qa summary::after{
+  content: "▶";
+  position: absolute;
+  right: -5px;
+  bottom: -2px;
+
+  transition: transform 0.3s ease;
+}
+/* khi mở → xoay xuống */
+.qa[open] summary::after{
+  transform: rotate(90deg);
+}
+/* khi mở */
+.qa[open] p{
+  max-height: 500px; /* đủ lớn */
+  margin-top: 15px;
+}
+
 body {
   margin: 0;
   background:
