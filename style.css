@@ -21,7 +21,7 @@
 .img-box{
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 380px;
   overflow: hidden;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -30,7 +30,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -390,6 +389,97 @@ h1 {
   .qa-list h2 {
     font-size: 17px;
   }
+
+.luni-btn{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 15px 25px;
+  border-radius: 50px;
+
+  background: #eee;
+  text-decoration: none;
+  color: black;
+
+  width: fit-content;
+  overflow: hidden;
+
+  transition: all 0.4s ease;
+}
+
+/* ICON TRÁI */
+.icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background: #c7e34f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+/* TEXT */
+.content{
+  position: relative;
+  height: 24px;
+}
+
+/* text chung */
+.content span{
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transition: 0.4s ease;
+  white-space: nowrap;
+}
+
+/* text ban đầu */
+.text-1{
+  opacity: 1;
+}
+
+/* text hover */
+.text-2{
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* HOVER EFFECT */
+.luni-btn:hover{
+  background: #c7e34f;
+}
+
+/* icon trượt qua phải */
+.luni-btn:hover .icon{
+  transform: translateX(150px);
+}
+
+/* text cũ bay lên */
+.luni-btn:hover .text-1{
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+/* text mới hiện */
+.luni-btn:hover .text-2{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 
   .site-footer {
     gap: 12px;
