@@ -517,12 +517,22 @@ img {
   width: 120px;
   height: auto;
 }
+
+.navbar{
+  display: flex;
+  justify-content: space-between; /* trái - giữa - phải */
+  padding: 20 px;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
   .site-footer {
     gap: 12px;
     padding: 18px 16px;
     border-radius: 14px;
   }
-
   .site-footer p {
     margin: 4px 0;
   }
