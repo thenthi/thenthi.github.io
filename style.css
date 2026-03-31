@@ -489,12 +489,34 @@ img {
   }
 }
 
-.hinh1{
-  top: 50px;
-  left: 40px;
-  transform: rotate(-10deg);
+/* layout ngang */
+.qa-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
+/* text */
+.qa-content{
+  flex: 1;
+}
+
+/* số */
+.qa-number{
+  font-size: 14px;
+  color: #a44;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* ảnh */
+.qa-img{
+  width: 120px;
+  height: auto;
+}
   .site-footer {
     gap: 12px;
     padding: 18px 16px;
