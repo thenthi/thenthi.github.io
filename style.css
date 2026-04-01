@@ -21,7 +21,7 @@
 .img-box{
   position: relative;
   width: 90%;
-  height: 600px;
+  height: 800px;
   overflow: hidden;
   border-radius: 20px;
   margin-top: 30px;
@@ -443,7 +443,7 @@ img {
   height: 30px;
 }
 
-/* text chung */
+/* TEXT CHUNG */
 .content span{
   position: absolute;
   left: 0;
@@ -452,12 +452,12 @@ img {
   white-space: nowrap;
 }
 
-/* text ban đầu */
+/* TEXT BAN ĐẦU */
 .text-1{
   opacity: 1;
 }
 
-/* text hover */
+/* TEXT HOVER */
 .text-2{
   opacity: 0;
   transform: translateY(100%);
@@ -468,7 +468,6 @@ img {
   background: #c7e34f;
 }
 
-/* 🔥 FIX CHÍNH: dùng % thay vì px */
 .luni-btn:hover .icon{
   transform: translateX(100%);
   opacity: 0%;
@@ -535,7 +534,6 @@ img {
   padding: 10px 30px;
 }
 
-/* căn từng cái */
 .navbar a:nth-child(1){
   justify-self: start;
 }
