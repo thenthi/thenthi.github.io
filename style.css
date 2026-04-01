@@ -180,8 +180,8 @@ img {
   content: "";
   position: absolute;
   inset: auto -80px -110px auto;
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   background: radial-gradient(circle, var(--accent-soft) 0%, rgba(139, 49, 57, 0) 72%);
   z-index: -1;
