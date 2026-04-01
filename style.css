@@ -200,9 +200,9 @@ img {
 }
 
 .hero-media img {
-  width: 86px;
-  height: 86px;
-  opacity: 0.92;
+  width: 196px;
+  height: 196px;
+  border-radius: 22px ;
   filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.12));
 }
 
