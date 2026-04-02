@@ -528,26 +528,63 @@ img {
   height: auto;
 }
 
-.navbar{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px 30px;
+/* NAVBAR STYLING */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 12px 56px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
-.navbar a:nth-child(1){
-  justify-self: start;
-}
-
-.navbar a:nth-child(2){
-  justify-self: center;
-}
-
-.navbar a:nth-child(3){
-  justify-self: end;
-}
-
-.navbar a{
+.navbar a {
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #2d2d2d;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 4px 8px;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #c794c9, #e59e9e);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #8b4a5b;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Active page styling */
+.navbar a[href="index.html"].active,
+.navbar a[href="studio.html"].active,
+.navbar a[href="thought.html"].active {
+  color: #8b4a5b;
+}
+
+.navbar a[href="index.html"].active::after,
+.navbar a[href="studio.html"].active::after,
+.navbar a[href="thought.html"].active::after {
+  width: 100%;
 }
 
   .site-footer {
