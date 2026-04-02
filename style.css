@@ -20,16 +20,14 @@
 
 .img-box{
   position: relative;
-  width: 90%;
-  height: 680px;
+  width: 100%;
+  height: 800px;
   overflow: hidden;
   border-radius: 20px;
-  margin-top: 30px;
-  margin-right: 60px;
-  margin-bottom:  30px;
-  margin-left: 60px;
+  margin: 30px 0px 30px;
 }
 
+/* ảnh chồng lên nhau */
 .img-box img{
   position: absolute;
   width: 100%;
@@ -37,35 +35,24 @@
   object-fit: cover;
 
   opacity: 0;
+  animation: fade 8s infinite;
 }
 
-.img-box img:nth-child(1){
-  animation: slideshow 8s infinite;
-  animation-delay: 0s;
-}
+/* delay từng ảnh (2s mỗi ảnh) */
+.img-box img:nth-child(1){ animation-delay: 0s; }
+.img-box img:nth-child(2){ animation-delay: 2s; }
+.img-box img:nth-child(3){ animation-delay: 4s; }
+.img-box img:nth-child(4){ animation-delay: 6s; }
 
-.img-box img:nth-child(2){
-  animation: slideshow 8s infinite;
-  animation-delay: 2s;
-}
-
-.img-box img:nth-child(3){
-  animation: slideshow 8s infinite;
-  animation-delay: 4s;
-}
-
-.img-box img:nth-child(4){
-  animation: slideshow 8s infinite;
-  animation-delay: 6s;
-}
-
-@keyframes slideshow{
+/* animation fade */
+@keyframes fade{
   0%{ opacity: 0; }
-  5%{ opacity: 1; }
+  10%{ opacity: 1; }
   25%{ opacity: 1; }
-  30%{ opacity: 0; }
+  35%{ opacity: 0; }
   100%{ opacity: 0; }
 }
+
 /* CARD (giữ ở li) */
 .qa-list li{
   counter-increment: item;
@@ -167,10 +154,10 @@ img {
   grid-template-columns: minmax(180px, 230px) 1fr;
   gap: 42px;
   align-items: center;
-  padding: 44px 48px;
+  padding: 20px 30px;
   margin-bottom: 56px;
   border: 1px solid var(--hairline);
-  border-radius: 24px;
+  border-radius: 25px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.42));
   box-shadow: var(--shadow-soft);
   overflow: hidden;
