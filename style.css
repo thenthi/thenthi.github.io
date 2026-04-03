@@ -323,10 +323,6 @@ img {
     left: 20px;
     top: 20px;
   }
-
-  .site-footer {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 560px) {
@@ -388,6 +384,7 @@ img {
   .qa-list h2 {
     font-size: 17px;
   }
+}
 
 .luni-btn{
   position: relative;
@@ -570,14 +567,4 @@ img {
 .navbar a[href="studio.html"].active::after,
 .navbar a[href="thought.html"].active::after {
   width: 100%;
-}
-
-  .site-footer {
-    gap: 12px;
-    padding: 6px 16px;
-    border-radius: 14px;
-  }
-  .site-footer p {
-    margin: 4px 0;
-  }
 }
