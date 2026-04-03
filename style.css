@@ -513,58 +513,151 @@ img {
 /* NAVBAR STYLING */
 .navbar {
   position: sticky;
-  top: 0;
+  top: 12px;
   z-index: 100;
+  width: fit-content;
+  margin: 12px auto 24px;
+  padding: 8px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 60px;
-  padding: 12px 56px;
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  justify-content: center;
+  gap: 6px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.4));
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px) saturate(130%);
+  box-shadow: 0 12px 34px rgba(118, 73, 96, 0.16);
 }
 
 .navbar a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.05em;
-  color: #2d2d2d;
-  transition: all 0.3s ease;
-  position: relative;
-  padding: 4px 8px;
+  letter-spacing: 0.08em;
+  color: #5e4b58;
+  padding: 10px 16px;
+  border-radius: 999px;
+  line-height: 1;
+  transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbar a b {
+  font-weight: 600;
 }
 
 .navbar a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #c794c9, #e59e9e);
-  transition: width 0.3s ease;
+  content: none;
 }
 
 .navbar a:hover {
-  color: #8b4a5b;
+  color: #7a4058;
+  background: rgba(236, 205, 224, 0.52);
+  transform: translateY(-1px);
 }
 
-.navbar a:hover::after {
+.navbar a.active {
+  color: #7a4058;
+  background: linear-gradient(135deg, rgba(232, 180, 205, 0.55), rgba(255, 233, 216, 0.62));
+  box-shadow: inset 0 0 0 1px rgba(170, 105, 142, 0.3), 0 6px 14px rgba(128, 78, 105, 0.16);
+}
+
+/*REFLECTION PAGE*/
+.reflection-page {
+  width: min(1120px, calc(100% - 56px));
+  margin: 0 auto 72px;
+  display: grid;
+  gap: 22px;
+}
+
+.reflection-hero {
+  padding: clamp(26px, 4vw, 40px);
+  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.42));
+  box-shadow: 0 16px 38px rgba(106, 66, 93, 0.16);
+}
+
+.reflection-kicker {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8c5372;
+}
+
+.reflection-hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(42px, 7vw, 68px);
+  line-height: 0.95;
+  color: #6f3553;
+  text-shadow: 0 10px 22px rgba(111, 53, 83, 0.2);
+}
+
+.reflection-lead {
+  margin: 0;
+  max-width: 72ch;
+  text-align: justify;
+  font-size: 16px;
+  color: #2f2630;
+}
+
+.reflection-media {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.media-card {
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  box-shadow: 0 10px 24px rgba(104, 63, 92, 0.12);
+}
+
+.media-card video {
   width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
 
-/* Active page styling */
-.navbar a[href="index.html"].active,
-.navbar a[href="studio.html"].active,
-.navbar a[href="thought.html"].active {
-  color: #8b4a5b;
+.media-card p {
+  margin: 10px 4px 2px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6a4d62;
 }
 
-.navbar a[href="index.html"].active::after,
-.navbar a[href="studio.html"].active::after,
-.navbar a[href="thought.html"].active::after {
-  width: 100%;
+.reflection-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.reflection-card {
+  padding: 22px 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.5));
+  box-shadow: 0 12px 26px rgba(102, 63, 87, 0.14);
+}
+
+.reflection-card h2 {
+  margin: 0 0 10px;
+  font-size: clamp(19px, 2.5vw, 24px);
+  color: #5f3454;
+}
+
+.reflection-card p {
+  margin: 0;
+  text-align: justify;
+  font-size: 15px;
+  color: #30272f;
+}
+
+.reflection-card--wide {
+  grid-column: 1 / -1;
 }
