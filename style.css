@@ -18,12 +18,8 @@
   --shadow-soft: 0 12px 36px rgba(41, 23, 11, 0.08);
 }
 
-.sub {
-  margin: 0;
-  color: var(--muted);
-  max-width: 62ch;
-  font-size: clamp(16px, 1.8vw, 19px);
-}
+html {scroll-behavior: smooth;}
+
 
 .eyebrow {
   text-transform: uppercase;
@@ -47,7 +43,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   opacity: 0;
   animation: fade 8s infinite;
 }
@@ -74,13 +69,6 @@ At the same time, I kept the transitions simple to avoid distracting users and t
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at 9% 8%, rgba(184, 204, 236, 0.72) 0%, rgba(184, 204, 236, 0) 46%),
-    radial-gradient(circle at 92% 10%, rgba(239, 204, 233, 0.66) 0%, rgba(239, 204, 233, 0) 44%),
-    radial-gradient(circle at 78% 88%, rgba(204, 184, 232, 0.58) 0%, rgba(204, 184, 232, 0) 48%),
-    radial-gradient(circle at 14% 92%, rgba(235, 218, 207, 0.56) 0%, rgba(235, 218, 207, 0) 50%),
-    var(--bg);
-  color: var(--ink);
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   line-height: 1.62;
   letter-spacing: 0.01em;
@@ -111,17 +99,6 @@ The soft colours, rounded corners, and subtle shadows are inspired by the Luni w
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.42));
   box-shadow: var(--shadow-soft);
   overflow: hidden;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: auto -80px -110px auto;
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--accent-soft) 0%, rgba(139, 49, 57, 0) 72%);
-  z-index: -1;
 }
 
 .hero-media {
@@ -210,11 +187,6 @@ along with small transform effects to improve the overall design and interaction
 }
 
 @media (max-width: 560px) {
-  .brand {
-    padding: 18px 16px 8px;
-    font-size: 20px;
-    letter-spacing: 0.06em;
-  }
 
   .wrap {
     padding: 10px 16px 34px;
@@ -243,10 +215,6 @@ along with small transform effects to improve the overall design and interaction
 
   h1 {
     font-size: clamp(30px, 11vw, 44px);
-  }
-
-  .sub {
-    font-size: 15px;
   }
 
   .qa-list {
@@ -321,11 +289,6 @@ This helped me improve my understanding of CSS animations and apply what I learn
   white-space: nowrap;
 }
 
-/* FIRST TEXT */
-.text-1{
-  opacity: 1;
-}
-
 /* TEXT HOVER */
 .text-2{
   opacity: 0;
@@ -357,15 +320,6 @@ This helped me improve my understanding of CSS animations and apply what I learn
 /* click effect */
 .luni-btn:active{
   transform: scale(0.97);
-}
-
-@keyframes fadeIn{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
 }
 
 /*The navigation bar is designed to be minimal in order to keep the website clear and easy to use. 
@@ -400,20 +354,9 @@ I chose a pink colour and hologram for this effect because it fits well with the
   padding: 10px 16px;
   border-radius: 999px;
   line-height: 1;
-  transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.navbar a b {
-  font-weight: 600;
-}
-
-.navbar a::after {
-  content: none;
 }
 
 .navbar a:hover {
-  color: #7a4058;
-  background: rgba(236, 205, 224, 0.52);
   transform: translateY(-1px);
 }
 

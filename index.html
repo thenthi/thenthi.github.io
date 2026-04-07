@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+</head>
 <!-- This website is designed to present my personal reflections and responses to questions about the Luni website. 
 I was inspired by the Luni website in terms of its colour palette, concept, imagery, and typography. 
 However, I simplified these elements to maintain readability and usability-->
@@ -17,11 +17,11 @@ However, I simplified these elements to maintain readability and usability-->
 <body style="background: linear-gradient(135deg, #ddc7e2, #e7d0e0, #fae2db);">
 
  <nav class="navbar">
-  <a href="index.html" class="active"><b>HOME</b></a>
-  <a href="experience.html"><b>EXPERIENCE</b></a>
-  <a href="reflection.html"><b>REFLECTION</b></a>
+  <a href="#home" class="active"><b>HOME</b></a>
+  <a href="#experience" class="active"><b>EXPERIENCE</b></a>
+  <a href="#reflection" class="active"><b>REFLECTION</b></a>
 </nav>
-     <section id="questions">
+     <section id="home">
         
 <h2 style="
     text-align: center; 
@@ -56,11 +56,11 @@ This helps maintain readability for users and makes the layout feel more comfort
                 <p class="eyebrow">Introduction</p>
                 <h1 style="
                 font-size: 25px; ">LUNIVERSE</h1>
-                <p class="sub;" 
+                <p
                 style="
                 font-size: 15px; 
                 text-align: justify;">
-                    Luni is an interactive website that uses 3D environments, animation, and user interaction to create an engaging digital experience. The platform presents different sections as small immersive worlds, encouraging users to explore through scrolling and cursor movement. Its playful design and dynamic visuals make the experience both creative and engaging.
+                    Luni is an interactive website that uses 3D environments, animation, and user interaction to create an engaging digital experience. The platform presents different sections as small immersive worlds, encouraging users to explore through scrolling and cursor movement. Its playful design and dynamic visuals make the experience both creative and engaging.</p></div>
         </section>
         
 <!--For the image section, I created a bordered box and placed it below the introductory text to keep the layout clean and well-structured. 
@@ -88,9 +88,228 @@ The arrow-style design is inspired by the Luni website, creating a visual connec
 
 <div style="display:flex; 
 justify-content: center;
-margin-top: -250px">
- <a href="experience.html" class="luni-btn">
+margin-top: -200px">
+ <a href="#experience" class="luni-btn">
   
+  <div class="icon">
+    →
+  </div>
+
+  <div class="content", align-items: center;>
+    <span class="text-1"><b>Discover</b> </span>
+    <span class="text-2">Enter → </span>
+  </div>
+</a>
+</div>
+
+    </main>
+
+     <section id="experience">
+  <h1 style="
+    text-align: center; 
+    font-size: 64px; 
+    margin-bottom: -40px; 
+    font-family: 'Space Grotesk', serif; 
+    color: #6f3553;
+    text-shadow: 0 10px 22px rgba(111, 53, 83, 0.2); ">
+    Experience
+  </h1>
+ 
+<!-- In this section, I designed a list of questions and answers, where every three questions are paired with an image placed beside them. 
+After each set, I used flex-direction: row-reverse to switch the position of the image and text, creating a zigzag layout. 
+This helps make the design look cleaner, less repetitive, and more visually engaging.-->
+
+<!--I selected these images as screenshots from the Luni website to support my responses.
+Including visual examples of the 3D objects helps illustrate my analysis more clearly 
+and makes the content more engaging for users.-->
+
+  <div style="display: flex; align-items: center; gap: 40 px;">
+  <img src="1.png" style="width: 700px; height: 500px;">
+<ol class="qa-list">
+  <li class="qa-item">
+      <details class="qa">
+        <summary>
+          <h2 style="
+            font-size: 18px;
+            margin-left: -30px;">What was the first thing you paid attention to when interacting with the experience?</h2>
+        </summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">The first thing that caught my attention when interacting with the website was the colorful 3D environment on the homepage. The large text “Welcome to the Luni verse” appears behind several small scenes that look like different rooms or spaces representing parts of everyday life. The subtle movements and animations within each area made the environment feel lively and interesting. I was especially drawn to the soft pastel color palette, which creates a calm and pleasant visual atmosphere. The overall design feels imaginative and slightly dreamy, which makes the website look very playful and visually appealing.</p></details></li>
+            <li class="qa-item">
+                <details class="qa">
+                <summary>
+           <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">Spend two minutes with the experience and create a list of each of your discrete actions.</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">
+                    During the first two minutes interacting with the experience, I performed the following actions:
+
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Opened the website and observed the 3D environment on the homepage.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Moved the cursor around to observe the subtle movements of the scene.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Looked closely at different objects placed in each area of the homepage.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Hovered over elements and noticed objects moving or floating.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Scrolled down to explore more parts of the website.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Clicked on the Omada section to explore another environment.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Observed the sports-themed environment, including the racing track and animated car.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Interacted with objects such as the soccer ball and basketball.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Navigated back to the homepage and clicked on the Studio section.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Observed a new environment with dynamic 3D elements such as moving spheres and butterflies.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Interacted with different 3D objects, including clicking on a butterfly and observing changes.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Explored interactive elements such as turning objects on and off.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Scrolled further and noticed the website automatically transitioned to a new section.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Scrolled to the final Career section and observed a playful 3D environment with cute objects.</ul>
+<ul style="margin-left:-70px;
+color: var(--muted);"> • Interacted with elements such as a frying pan and a punching bag, which responded in an engaging way.</ul>
+</p></details></li>
+            <li>
+                <details class="qa">
+                <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">What part of the experience did you spend the most time engaging with?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">I spent the most time engaging with the interactive animations throughout the website. As the experience is designed in a 3D environment, many objects respond to user interaction, which makes the experience more engaging. I spent a significant amount of time interacting with these 3D elements, observing how they move and react when I hovered over or clicked on them. This aspect of the website encouraged me to explore more and repeat certain interactions multiple times. This suggests that the interactive animations are a key feature designed to capture and maintain user attention.</p></details></li></div>
+            <li>
+                <div style="display: flex; align-items: center; gap: 40 px; flex-direction:row-reverse;">
+  <img src="2.png" style="width: 700px; height: 400px;">
+                <ol class="qa-list">
+  <li class="qa-item">
+                <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">What was the most common action in your two minute interaction with the experience?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">The most common action during my two-minute interaction was moving the cursor across different parts of the 3D environment to observe how the objects respond. Many elements react to cursor movement by shifting or floating slightly, which encouraged me to continue exploring the scene. Another frequent action was scrolling, as I used it to navigate through the website and reveal new sections, where additional 3D elements would appear and animate as I moved down the page.</p></details></li>
+            <li>
+                <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">What is your impression of the intended primary goal of the interactive experience?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">The most common action during my two-minute interaction was moving the cursor across different parts of the 3D environment to observe how the objects respond. Many elements react to cursor movement by shifting or floating slightly, which encouraged me to continue exploring the scene. Another frequent action was scrolling, as I used it to navigate through the website and reveal new sections, where additional 3D elements would appear and animate as I moved down the page.</p></details></li>
+            <li>
+                <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">How does the interactive experience communicate this primary goal?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">The interactive experience communicates this goal through the use of visually engaging 3D environments, smooth animations, and visual storytelling. Each section introduces different aspects of the platform, allowing users to explore its features by interacting with 3D objects rather than passively reading text. After engaging with the 3D environments, users are presented with sections of text accompanied by fluid animations, where the typography and visuals appear almost dynamic and lively. This combination of movement, layout, and imagery helps guide users through the platform’s concept and enhances their overall understanding of its purpose.</p>
+            </details></li></div>
+            <li> 
+                  <div style="display: flex; align-items: center; gap: 40 px;">
+  <img src="3.png" style="width: 1500px; height: 400px;">
+                <ol class="qa-list">
+  <li class="qa-item">
+                <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;" >What is your impression of how the experience should be interacted with over time? (For how long and how many different times)</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">In my opinion, the experience is designed to be used for a short period of time, typically around five to ten minutes. From my experience, the visually appealing interface, including the moving 3D elements and harmonious pastel colors, encourages users to explore the website in one session. However, it seems that the experience does not require frequent revisits, as it mainly functions as an introduction to the platform. I feel that one or two visits are enough for users to fully explore its content.</p></details></li>
+            <li>
+                <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">How does the interactive experience communicate how it should be interacted with over time?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">The interactive experience communicates this through its scroll-based structure and linear progression. As users scroll down the page, new sections are revealed sequentially, guiding them to explore the experience in a single session. Users are encouraged to click and interact with different elements in each section, engage with small 3D objects, and then read the related information about the platform. Additionally, the lack of features such as user accounts or regularly updated content suggests that the experience is designed to be explored once rather than repeatedly.</p></details></li>
+            <li>
+                 <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;" >What other media forms (digital or otherwise) does the experience reference?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">In my opinion, the experience references a variety of media forms, including video games, web-based animations, and digital product advertisements. The 3D environments and interactive elements create a game-like experience, allowing users to interact with objects as if they are playing within a virtual space. At the same time, the smooth animations of both visuals and text resemble common web animation styles found in modern websites. In addition, the overall structure and polished visual presentation of the website reflect a modern product landing page designed to promote a digital application.</p></details></li></div>
+            <li>
+                  <div style="display: flex; align-items: center; gap: 40 px; flex-direction: row-reverse;">
+  <img src="4.png" style="width: 1400px; height: 400px;">
+                <ol class="qa-list">
+  <li class="qa-item">
+                 <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">What does this reference/s communicate to you about how you should act when engaging with your research experience?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">These references suggest that I should interact with the experience in an active and exploratory way. The game-like elements encourage me to click, move the cursor, and interact with different 3D objects. Meanwhile, the web animation style leads me to scroll and observe how the content and concept change as I scroll up and down the page. At the same time, the structure of product advertisements also encourages me to read, explore, and understand the information about the interactive web project.</p></details></li>
+            <li>
+                 <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">What does this reference/s communicate to you about how you should feel when engaging with your research experience?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">These references suggest that I should feel curious, excited, and engaged while interacting with the experience. The game-like elements make me feel excited and curious, as exploring one section encourages me to move to another to discover more interesting features. The web animation style makes me feel satisfied and impressed, as the smooth movements and soft visuals create a light and almost dreamlike atmosphere, as if I am floating in the clouds. In addition, the structure of a modern product landing page makes me feel interested and confident in the platform, as it presents information in a clear, polished, and visually appealing way.</p></details></li>
+            <li>
+                 <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">What is the most frustrating part of the interaction to you and what makes that part frustrating?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">One of the most annoying aspects of interaction is scroll sensitivity. The site responds very quickly to scrolling input, which sometimes causes the page to move to the next section too suddenly. As a result, I sometimes missed important details or didn't have enough time to fully explore the previous section before moving on to another experience. This made the interaction feel a bit rushed and reduced my ability to fully engage with certain elements.</p></details></li>
+            <li>
+                 <details class="qa">
+                    <summary>
+            <h2 style="
+                    font-size: 18px;
+                    margin-left: -30px;">What is the most satisfying part of the interaction to you and what makes that part satisfying?</h2></summary>
+                <p style="
+                    font-size: 15px;
+                    text-align: justify;
+                    margin-left: -30px;">The most satisfying part of the experience is the visual design of the site, especially the use of 3D elements and smooth animations. Carefully designed 3D objects, combined with soothing pastel colors, create a vibrant and visually pleasing environment. Smooth movements and responsive interactions make designs vibrant and engaging, enhancing the overall user experience. This strong visual design makes the website fun to explore and leaves a lasting impression.</p></details></li></div>
+        </ol>
+
+        <div style="display: flex;
+        justify-content: center;
+        margin-top: -50px; ">
+<a href="#reflection" class="luni-btn">
+
   <div class="icon">
     →
   </div>
@@ -102,6 +321,74 @@ margin-top: -250px">
 </a>
 </div>
 
-    </main>
+
+<!--In the reflection section, I mentioned that interacting with the Luni website felt very different and engaging, 
+especially because of the 3D elements. To support this, I included a screen recording showing how I interacted with the website.
+I placed it right after the first paragraph so it directly connects with what I described.-->
+
+  <main class="reflection-page"
+  style="margin-top: 100px;">
+    <section class="reflection-hero" id="reflection">
+      <p class="reflection-kicker">Research Journal</p>
+      <h1 style="
+    text-align: left; 
+    font-size: 64px; 
+    margin-top: -30px; 
+    margin-bottom: -10px;
+    font-family: 'Space Grotesk', serif; 
+   color: #6f3553;
+   text-shadow: 0 10px 22px rgba(111, 53, 83, 0.2); ">Reflection</h1>
+      <p class="reflection-lead">
+        When I first interacted with the Luni website, I realised that the experience felt very different from other traditional websites I had visited before. Instead of following a conventional design that mainly presents text and images, the Luni website uses 3D objects to attract users, and these elements can also be interacted with. Personally, I found myself paying more attention to how the interface responds to my actions. This made the experience feel more playful and less task-oriented, almost like exploring a digital environment rather than simply browsing a website.
+      </p>
+    </section>
+
+<section class="reflection-media" aria-label="Interaction clips">
+      <article class="media-card">
+        <video autoplay muted loop playsinline>
+          <source src="boxing.mp4" type="video/mp4">
+        </video>
+        <p>Playful object interaction</p>
+      </article>
+
+      <article class="media-card">
+        <video autoplay muted loop playsinline>
+          <source src="soccer.mp4" type="video/mp4">
+        </video>
+        <p>Sports scene exploration</p>
+      </article>
+
+      <article class="media-card">
+        <video autoplay muted loop playsinline>
+          <source src="egg.mp4" type="video/mp4">
+        </video>
+        <p>Responsive animation moments</p>
+      </article>
+    </section>
+
+ <section class="reflection-notes">
+      <article class="reflection-card">
+        <h2>Learning Through Building</h2>
+        <p>
+          After interacting with the Luni website, I decided to create my own website. During the development process, I encountered several challenges. At the beginning, I felt quite confused when working with coding languages such as HTML and CSS, as I did not fully understand how they function. This made the process of writing code quite difficult. However, after reviewing the lecture slides and exploring additional learning resources, I gradually developed a clearer understanding. I learned that HTML and CSS are the two foundational technologies used to create and design websites. While they work together, they serve distinct purposes: HTML provides the structure and content, while CSS controls the style and layout. <!--link-->
+        </p>
+      </article>
+
+      <article class="reflection-card">
+        <h2>Overcoming Technical Challenges</h2>
+        <p>
+          Despite gaining a better understanding of HTML and CSS, I still encountered many challenges throughout the development process. I found it difficult to fully understand certain structures and how they functioned, which often led to errors and caused the website to behave in unexpected ways. To overcome these difficulties, I actively sought additional learning resources. I referred to W3Schools<!--link--> to better understand HTML structures and syntax, watched several tutorial videos on YouTube, and also used AI tools to assist me in creating more complex effects. These resources helped me gradually improve my technical skills and become more confident in solving problems during the development process.
+        </p>
+      </article>
+    
+    <article class="reflection-card reflection-card--wide">
+        <h2>Key Takeaway</h2>
+        <p>
+          In conclusion, this experience helped me understand that creating a website is not only about making it visually appealing, but also about understanding how design and code work together. It also showed me the importance of patience and continuous learning when facing technical challenges. Overall, I feel more confident in both my coding skills and my ability to think more critically about design decisions.
+        </p>
+      </article>
+    </section>
+  </main>
+
 </body>
 </html>
