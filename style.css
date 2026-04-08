@@ -125,6 +125,9 @@ and added hover effects to make the interaction more engaging. As this was my fi
 then refined it myself by removing unnecessary elements and adjusting it based on my understanding. I also applied layout techniques such as alignment, margin, padding, and borders, 
 along with small transform effects to improve the overall design and interaction.*/
 
+/*When I used LLM to help write this code, and I understand that it controls text alignment, font sizes, and colors for each question box. 
+It also adds rounded corners, hover effects (including movement and shadows), positions the arrow correctly, 
+and creates an animation where the arrow rotates on click while the answer expands and the box resizes.*/
 .qa-list {
   list-style: none;
   counter-reset: qa;
@@ -150,7 +153,6 @@ along with small transform effects to improve the overall design and interaction
   line-height: 1.36;
   font-weight: 500;
   margin: 10px;
-  text-wrap: pretty;
 }
 
 .qa-list p {
@@ -167,6 +169,10 @@ along with small transform effects to improve the overall design and interaction
     box-shadow: 0 10px 26px rgba(35, 20, 8, 0.08);
   }
 }
+
+/*I used LLM to help write this code, and I understand that it controls text alignment, font sizes, and colors for each question box. 
+It also adds rounded corners, hover effects (including movement and shadows), positions the arrow correctly, 
+and creates an animation where the arrow rotates on click while the answer expands and the box resizes.*/
 
 .qa summary{
   list-style: none;
@@ -238,10 +244,9 @@ along with small transform effects to improve the overall design and interaction
   }
 }
 
-/*I found this arrow animation quite challenging, especially when making the text appear on hover. 
-I first used ChatGPT to generate the initial code, then explored tutorials on YouTube to better understand how the animation works. 
-After that, I adjusted and simplified the code to fit my design.
-This helped me improve my understanding of CSS animations and apply what I learned in Week 4.*/
+/*In this part, I used an LLM to ask how to adjust the effects for the “luni-btn” section. After reviewing the explanation, 
+I realized it was built from simpler code patterns, so I tried to recreate it myself. I first adjusted the text and icon, 
+then added effects like transform and opacity to achieve the interaction I wanted.*/
 
 .luni-btn{
   position: relative;
@@ -254,10 +259,6 @@ This helped me improve my understanding of CSS animations and apply what I learn
   background: #eee;
   text-decoration: none;
   color: black;
-  width: fit-content;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.4s ease;
 }
 
 /* ICON */
@@ -271,7 +272,6 @@ This helped me improve my understanding of CSS animations and apply what I learn
   justify-content: center;
   font-size: 20px;
   transition: transform 0.4s ease;
-  will-change: transform;
 }
 
 /* TEXT */
@@ -326,6 +326,10 @@ This helped me improve my understanding of CSS animations and apply what I learn
 I added a hover effect to provide visual feedback and encourage user interaction.
 I chose a pink colour and hologram for this effect because it fits well with the overall layout, and it is also inspired by the Luni website’s colour palette.*/
 
+/*For this part, I’m more familiar with the code. I can write the basic elements myself, 
+such as text alignment, font sizes, colors, and sizing. However, for more complex effects and creating the navigation bar, 
+I learned by watching tutorials on YouTube.*/
+
 /* NAVBAR STYLING */
 .navbar {
   position: sticky;
@@ -368,6 +372,9 @@ I chose a pink colour and hologram for this effect because it fits well with the
 
 /*For this part, I applied the knowledge I learned in class by using basic CSS properties to design the layout of the page. 
 I focused on arranging different boxes and elements clearly so that the content is easy to read and well-organised.*/
+
+/*I revisited the lesson on layout and went back to the in-class exercises on the lecture slides to review and recall 
+the code, which I then used to build the reflection section.*/
 
 /*REFLECTION PAGE*/
 .reflection-page {
@@ -461,3 +468,22 @@ I focused on arranging different boxes and elements clearly so that the content 
 .reflection-card--wide {
   grid-column: 1 / -1;
 }
+
+/*REFLECTION*/
+/*
+Bro Code ( 21 September 2023) 'How to create a CSS navigation bar in 6 minutes!' [video], Bro Code, YouTube website, accessed 6 April 2026, https://www.youtube.com/watch?v=f3uCSh6LIY0
+
+Built in (2025) User Acquisition Manager, Built in website, accessed 5 April 2026. https://builtin.com/job/user-acquisition-manager/3427740
+
+Future Learn (2021) ‘What are HTML and CSS used for? The basics of coding for the web’, Future Learn website, accessed 5 April 2026. https://www.futurelearn.com/info/blog/what-are-html-css-basics-of-coding
+
+Fuwen (n.d.) Hình đám Mây Màu Hồng [PNG picture], Pngtree website, accessed 5 April 2026. https://vi.pngtree.com/freepng/pink-cloud-shape_20284363.html
+
+Herve (n.d.) Luni, Herve website, accessed 5 April 2026.  https://herve.paris/en/our-work/luni#:~:text=Radical%20Freedom,consistency%20among%20the%20various%20environments.
+
+Knowledge ( 21 September 2024) 'How to Navigate / Scroll Down to a DIV on Button Click using HTML & CSS' [video], Web Tech Knowledge, YouTube website, accessed 6 April 2026, https://www.youtube.com/watch?v=oby8GHRgRyg&t=66s
+
+Luni (2025) Welcome to the Luniverse, Luni website, accessed 5 April 2026. https://www.luni.app/
+
+W3schools (n.d.) HTML Introduction, W3schools website, accessed 5 April 2026. https://www.w3schools.com/html/html_intro.asp
+*/
